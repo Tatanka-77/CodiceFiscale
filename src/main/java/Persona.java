@@ -45,4 +45,11 @@ public class Persona {
     public String getCitta() {
         return citta;
     }
+
+    @Override
+    public String toString() {
+        return ("Nome : " + this.nome + "\nCognome : " + this.cognome +
+                           "\nData di nascita : " + giorno + " " + mese.toString() + " " + anno +
+                           "\nGenere : " + genere.toString() + "\nCitta : " + citta);
+    }
 }

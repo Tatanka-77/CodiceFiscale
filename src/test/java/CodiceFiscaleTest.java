@@ -60,6 +60,10 @@ class CodiceFiscaleTest {
         Persona persona = new Persona("MARIA", "ROSSI", 2001,
                 Mese.SETTEMBRE, 11, Genere.DONNA, "Palermo");
         String codice = CodiceFiscale.calcolaCodice(persona);
+        System.out.println("TEST CALCOLO CODICE");
+        System.out.println(persona);
+        System.out.println("Codice Fiscale atteso:    RSSMRA01P51G273P" );
+        System.out.println("Codice fiscale calcolato: " + codice.toUpperCase());
         assertEquals("RSSMRA01P51G273P", codice.toUpperCase());
     }
 
